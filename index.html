@@ -8,6 +8,7 @@
         <title>Portfolio</title>
         
         <link href="style.css" rel="stylesheet" type = "text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans"> <!--alt font: Space Grotesk-->
         <!--<link href='https://fonts.googleapis.com/css?family=Quicksand' rel="stylesheet">-->
     </head>
 
@@ -47,6 +48,7 @@
           
         <div class="main" id="main">
 
+                <!--Introduction-->
                 <div class="main-section" id="introduction" href="#introduction">
                     <div class="section-title" style="display: flex; justify-content: space-between; align-items: center;">
                         <!--<a style="font-size: 2em; font-weight: bold;">Introduction</a>
@@ -54,13 +56,13 @@
                         -->
                     </div>
 
-                    <div style="display: flex; justify-content: center; align-items: center; margin-top: 6rem;">
+                    <div class="profile-info-container" style="display: flex; justify-content: center; align-items: center; margin-top: 4rem;">
                         <div class="profile-picture-container" style="margin-right: 10%;">
                             <span></span>
                         </div>
-                        <div style="width: 55%; font-weight: bold; font-size: 18px;">
-                            <p style="font-size: 36px;">howdy! 🤠</p>
-                            <p style="font-size: 36px;">i'm [redacted]</p>
+                        <div class="info-container" style="width: 55%; font-weight: bold; font-size: 18px;">
+                            <p style="font-size: 36px;">howdy! 🤠☕️</p>
+                            <p style="font-size: 36px;">i'm [name]</p>
                             
                             <p>cs+math student and teaching assistant @ brown university.</p>
                             <p>cs+math instructor @ juni learning.</p>
@@ -70,6 +72,7 @@
                     </div>
                 </div>
 
+                <!--Projects-->
                 <div class="main-section" id="projects" href="#projects">
                     <div class="section-title" style="display: flex; justify-content: space-between; align-items: center;">
                         <a style="font-size: 2em; font-weight: bold;">projects</a>
@@ -78,23 +81,23 @@
                     
                     <div class="projects-container">
                         <div class="projects-item">
-                            <a href="http://www.zete.org/home/" target="_blank"><img src="zeta-delta-xi.png"/></a>
+                            <a href="http://www.zete.org/home/" target="_blank"><img class="box-img" src="zeta-delta-xi.png"/></a>
                             <h4>Zeta Delta Xi Website</h4>
                         </div>
                         <div class="projects-item">
-                            <a href="https://funkyfox123.github.io/csci-1300-development/" target="_blank"><img src="development.png"/></a>
+                            <a href="https://funkyfox123.github.io/csci-1300-development/" target="_blank"><img class="box-img" src="development.png"/></a>
                             <h4>Legends of Runeterra Card Gallery in React</h4>
                         </div>
                         <div class="projects-item">
-                            <a href="https://funkyfox123.github.io/csci-1300-responsive-redesign/" target="_blank"><img src="when2meet-redesign.png"/></a>
+                            <a href="https://funkyfox123.github.io/csci-1300-responsive-redesign/" target="_blank"><img class="box-img" src="when2meet-redesign.png"/></a>
                             <h4>When2Meet Responsive Redesign</h4>
                         </div>
                         <div class="projects-item">
-                            <a href="https://funkyfox123.github.io/csci-1300-iterative-design-and-evaluation/" target="_blank"><img src="interative-design-and-evaluation.png"/></a>
+                            <a href="https://funkyfox123.github.io/csci-1300-iterative-design-and-evaluation/" target="_blank"><img class="box-img" src="interative-design-and-evaluation.png"/></a>
                             <h4>Iterative Website Design for Vendoo</h4>
                         </div>
                         <div class="projects-item">
-                            <a href="https://cs32termproject.web.app/" target="_blank"><img src="better-brown.png"/></a>
+                            <a href="https://cs32termproject.web.app/" target="_blank"><img class="box-img" src="better-brown.png"/></a>
                             <h4>Better Brown App in React</h4>
                         </div>
                     </div>
@@ -104,6 +107,7 @@
                     <h1>Art</h1>
                 </div>-->
 
+                <!--About Me-->
                 <div class="main-section" id="about-me" href="#about-me">
                     <div class="section-title" style="display: flex; justify-content: space-between; align-items: center;">
                         <a style="font-size: 2em; font-weight: bold;">about me</a>
@@ -114,12 +118,12 @@
                         </video>-->
                     </div>
 
-                    <div style="display: flex; align-items: center; justify-content: center;">
+                    <div class="profile-info-container" style="display: flex; align-items: center; justify-content: center;">
                         
 
-                        <div style="width: 50%; margin-right: 10%;">
+                        <div class="info-container" style="width: 60%; margin-right: 10%;">
                             <p>
-                                Hey y'all! I'm [redacted], and I'm from the Mississippi Delta (yeehaw).
+                                Hey y'all! I'm [name], and I'm from the Mississippi Delta (yeehaw).
                             </p>
 
                             <p>
@@ -133,7 +137,7 @@
                             </p>
 
                             <p>
-                                If I'm not crying from debugging code, I'm writing songs on my ukulele, making iced caramel lattes, or struggling to reach gold in League of Legends.
+                                If I'm not crying while debugging code, I'm writing songs on my ukulele, making iced caramel lattes, or struggling to reach gold in League of Legends.
                             </p>
                             <p>
                                 btw, my favorite emoji is 🤠
@@ -148,15 +152,20 @@
                     
                 </div>
 
-                <div class="main-section" id="resume" href="#resume" style="height: 63rem;">
+                <!--Resume-->
+                <div class="main-section" id="resume" href="#resume">
                     <div class="section-title" style="display: flex; justify-content: space-between; align-items: center;">
                         <a style="font-size: 2em; font-weight: bold;">resume</a>
                         <iframe src='https://my.spline.design/hotchocolate-26001985eb08f22ac0d40a0ca05f08c0/' frameborder='0' width='140rem' height='100%'></iframe>
                     </div>
+                    <div style="display: flex; width: 100%; justify-content: center;">
+                        <a href="resume.pdf" target="_blank" style="width: 35%;"><img class="box-img" src="resume.png" style="width: 100%;"></img></a>
+                    </div>
 
-                    <iframe id="resume-pdf" src="resume.pdf" width="70%" height="970rem" style="margin-left: 15%; margin-right: 15%;"></iframe>
+                    <!--<iframe id="resume-pdf" src="resume.pdf" width="70%" height="970rem" style="margin-left: 15%; margin-right: 15%;"></iframe>-->
                 </div>
 
+                <!--Contact Me-->
                 <div class="main-section" id="contact-me" href="#contact-me">
                     <div class="section-title" style="display: flex; justify-content: space-between; align-items: center;">
                         <a style="font-size: 2em; font-weight: bold;">contact me</a>
