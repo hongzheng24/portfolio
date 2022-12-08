@@ -1,0 +1,210 @@
+:root {
+    --menu-background-color: #967259;
+    --menu-color: black;
+    --menu-color-hover: white;
+    --main-background-color: #dbc1ac;
+    --main-color: black;
+    --image-border-color: #967259;
+    --box-shadow-color: #38220f;
+    --profile-picture-color: #38220f;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0; /*TODO: FIGURE OUT MARGIN VS PADDING*/
+    scroll-behavior: smooth;
+    line-height: 150%;
+    background-color: var(--main-background-color);
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hide {
+    display: none;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: var(--menu-background-color); 
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*border-bottom: 1px solid var(--main-color2);*/
+    color: var(--menu-color);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: 100%;
+}
+
+.navbar-title {
+    height: fit-content;
+}
+
+.navbar-title a {
+    color: var(--menu-color);
+}
+
+.navbar-line {
+    margin-top: -1.2rem;
+    
+    width: 95%;
+    height: 1px;
+    background-color: black;
+    line-height: 80%;
+}
+
+.navbar-item-container {
+    align-self: center;
+    width: fit-content;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-item-div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Links inside the navbar */
+.navbar-item {
+
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 90%;
+    padding-bottom: 1%;
+}
+
+/* Link animation */
+
+.navbar-item::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 20%; /* CHANGE */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-item:hover {
+    color: var(--menu-color-hover)
+}
+
+.navbar-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-item-div:hover iframe {
+    display: inline;
+    width: 5rem;
+    height: 100%;
+}
+
+.navbar-item-div:hover .navbar-item {
+}
+
+
+/* Change background on hover of nav item */
+.navbar-item {
+    color: var(--menu-color);
+}
+
+.navbar-item::after {
+    background-color: var(--menu-color-hover);
+}
+
+
+/* Main content */
+.main {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.main-section {
+    padding-top: 6rem;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projects-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 48%;
+}
+
+.projects-item img:hover {
+    box-shadow: 8px 8px var(--box-shadow-color);
+}
+
+
+#projects img {
+    width: 100%;
+    border: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: var(--image-border-color);
+    
+}
+
+.profile-picture-container {
+    display: flex;
+    align-items:center;
+}
+
+.profile-picture-container span {
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    background-color:var(--profile-picture-color);
+    display:block;
+}
+
+@media screen and (max-width: 800px) {
+
+    .navbar-item-container {
+        display: none;
+    }
+
+    .projects-item {
+        width: 100%;
+    }
+}
+
+#resume-pdf {
+    border: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: var(--image-border-color);
+}
