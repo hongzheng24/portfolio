@@ -8,9 +8,9 @@
     --box-shadow-color: #38220f;
     --profile-picture-color: #38220f;
     --projects-item-background-color-1: #ece0d1;
-    --projects-item-background-color-2: #967259;
     --collapsible-button-background-color: #38220f;
     --collapsible-button-color: white;
+    --projects-link-color: #967259;
 }
 
 html {
@@ -157,6 +157,10 @@ body {
 }
 
 /* Projects Section */
+.projects.container a {
+    color: var(--projects-link-color);
+}
+
 .projects-container {
     display: flex;
     justify-content: center;
@@ -304,8 +308,6 @@ body {
 .text-container {
     width: 60%;
 }
-
-
 
 #resume-pdf {
     width: 80%;
