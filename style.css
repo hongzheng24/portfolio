@@ -66,6 +66,8 @@ html {
     justify-content: center;
     /*border-bottom: 1px solid var(--main-color2);*/
     color: var(--menu-color);
+
+    z-index: 99;
 }
 
 .navbar-container {
@@ -267,9 +269,21 @@ body {
     width: 60%;
 }
 
-#resume-pdf {
+.resume-container {
+    margin-left: 14%;
     width: 72%;
-    height: 61rem;
+    padding-top: 97.5%;/*129.41%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+}
+
+#resume-pdf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     border: none;
     /* COMMENT: brown rounded border
     border: solid;
