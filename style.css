@@ -308,7 +308,7 @@ body {
 }
 
 .contact-me-body img {
-    width: 1.4rem;
+    width: 1.5rem;
     margin-right: .4rem;
 }
 
@@ -320,6 +320,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+    html {
+        font-weight: normal;
+    }
 
     .projects-item {
         width: 100%;
@@ -354,6 +357,18 @@ body {
 
     .text-container {
         width: 100%;
+    }
+
+    .projects-title-container {
+        padding: 1rem 1rem 0rem 1rem;
+    }
+    .projects-item {
+        padding-bottom: 1rem;
+    }
+
+    .contact-me-body img {
+        width: 2rem;
+        margin-right: .5rem;
     }
 }
 
