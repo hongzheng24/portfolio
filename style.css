@@ -334,6 +334,7 @@ body {
 
     .projects-item:nth-child(1n) .projects-info-container {
         margin-left: 0;
+        margin-right: 0;
     }
 
     .profile-picture-container {
@@ -383,7 +384,7 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     html {
         font-weight: normal;
     }
