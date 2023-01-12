@@ -100,7 +100,7 @@ html {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: bold;
     padding-bottom: 1%;
     padding-top: 1%;
 }
@@ -368,11 +368,6 @@ body {
     .projects-item {
         padding-bottom: 1rem;
     }*/
-
-    .contact-me-body img {
-        width: 2rem;
-        margin-right: .5rem;
-    }
 }
 
 @media screen and (max-width: 750px) {
@@ -382,22 +377,46 @@ body {
     }
 }
 
-/* Mobile browsers only */
+
+/*
+ * Mobile browsers only
+ * Mobile browsers adjust font size if line extends too long (likely if it extends pass screen, unsure)
+ * This can be prevented using:
+ *      @media only screen and (max-device-width: 480px) {      
+ *              td#main_box { -webkit-text-size-adjust:100% }               
+ *      }
+ * However, this has consequences--font sizes might be too small when user zooms in.
+ * Instead, we will hard-code font sizes specifically for mobile.
+*/
 @media only screen and (max-device-width: 480px) {
     
     html {
         font-weight: normal;
+        font-size: 1.5em;
+    }
+
+    .heading {
+        font-size: 2.5em;
     }
 
     .projects-item {
-        font-size: 27px; /*1.5em;*/
+        font-size: 1.5em; /*27px*/
     }
 
     .projects-title-container .sub-heading {
-        font-size: 20.25px; /*.75em;*/
+        font-size: .75em; /*20.25px*/
     }
 
     .project-title-sub-container {
         max-width: 80%;
+    }
+
+    .contact-me-body img {
+        width: 2rem;
+        margin-right: .5rem;
+    }
+
+    .navbar-item {
+        font-weight: normal;
     }
 }
