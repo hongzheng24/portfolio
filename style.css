@@ -189,7 +189,6 @@ body {
 }
 
 .projects-img-container {
-  
     width: 55%;
 }
 
@@ -328,7 +327,6 @@ body {
     }
 
     .projects-info-container {
-
         width: 100%;
     }
 
@@ -384,16 +382,22 @@ body {
     }
 }
 
-@media screen and (max-width: 1000px) {
+/* Mobile browsers only */
+@media only screen and (max-device-width: 480px) {
+    
     html {
         font-weight: normal;
     }
 
     .projects-item {
-        font-size: 1.5em;;
+        font-size: 27px; /*1.5em;*/
     }
 
     .projects-title-container .sub-heading {
-        font-size: .75em;
+        font-size: 20.25px; /*.75em;*/
+    }
+
+    .project-title-sub-container {
+        max-width: 80%;
     }
 }
