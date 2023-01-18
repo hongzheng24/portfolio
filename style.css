@@ -1,3 +1,7 @@
+/*
+*   TODO: adjust mobile fonts to be more consistent         
+*/
+
 :root {
     --menu-background-color: #967259;
     --menu-color: black;
@@ -79,6 +83,7 @@ html {
 
 .navbar-title {
     height: fit-content;
+    font-size: 1.5em;
 }
 
 .navbar-title a {
@@ -393,6 +398,7 @@ body {
     html {
         font-weight: normal;
         font-size: 1.5em;
+        max-width: 100%;
     }
 
     .heading {
@@ -418,5 +424,10 @@ body {
 
     .navbar-item {
         font-weight: normal;
+    }
+
+    .navbar-title {
+        font-weight: normal;
+        font-size: 1.5em;
     }
 }
