@@ -16,7 +16,7 @@
             <div class="navbar-container">
                 <div class="navbar-title" style="height: 100%; display: flex; align-items: center;">
                     <iframe src='https://my.spline.design/hotchocolate025-933723823a803bd2f03995f287490516/' frameborder='0' width='80rem' height='100%'></iframe>
-                    <a href="#main" style="text-decoration: none;"><h1>reggie zheng</h1></a>
+                    <a href="#main" style="text-decoration: none;"><p>reggie zheng</p></a>
                 </div>
 
                 <div class="navbar-item-container flex-center">
@@ -77,6 +77,8 @@
                 <div class="section-title" style="display: flex; justify-content: space-between; align-items: center;">
                     <a class="heading">projects</a>
                     <iframe src='https://my.spline.design/coffeelatte-9fbaee26bd2395999f1b996e61ea9acd/' frameborder='0' width='140rem' height='100%'></iframe>
+                    <!--<iframe src='https://my.spline.design/coffeelattewscrollbehavior-3d9e92204f02119c27b3799bc6a8a393/' frameborder='0' width='140rem' height='100%'></iframe>-->
+                    <!--<iframe src='https://my.spline.design/coffeelatte-9fbaee26bd2395999f1b996e61ea9acd/' frameborder='0' width='140rem' height='100%'></iframe>-->
                 </div>
                 
                 <div class="projects-container" id="projects-container"></div>
@@ -153,14 +155,17 @@
 
     // List of project information
     projects = [
+
         {
-            "name": "Zeta Delta Xi Website",
-            "subheading": "HTML & CSS",
-            "information": ["I am one of the web editors for Zeta Delta Xi. My primary role is to maintain the Zeta Delta Xi website and frequently update it with information on current officers and members.",
-                "As a web editor, I also manipulate internal SQLite databases and update them with sensitive information.",
-                "Zeta Delta Xi is a gender-inclusive and LGBTQ-friendly fraternity at Brown Universty focusing on creating a welcoming space for queer students."],
-            "links": [["Visit the website!", "http://www.zete.org/home/"]],
-            "images": ["zeta-delta-xi-website-1.png", "zeta-delta-xi-website-2.png"]
+            "name": "Better Brown App in React",
+            "subheading": "React, Selenium, Typescript, Java, Python, HTML & CSS",
+            "information": ["In a team, I helped create the Better Brown App that has the following functionalities: a crowd-sourced event calendar, a geolocator algorithm that tells the user how busy a campus location is, and user authentication.",
+                "I primarily worked on the geolocator algorithm. It lists campus locations, such as libraries and cafeterias, and displays how busy they are. It receives the user's location using a geolocator API and determines if the user is in a campus location using an algorithm that calculates if the user's longitude-latitude coordinates are within the radius of a campus location. It determines how busy a location is by storing the number of occupants and using an algorithm that accounts for the location's current occupancy, time of day, and the location's maximum occupancy.",
+                "Secondarily, I focused on the user experience of the website and the ethics surrounding user privacy. Aside from my main roles, I also helped my team members work on the crowd-sourced event calendar, user authentication, and testing using Selenium.",
+                "This project helped me strengthen my proficiency with React and Selenium and strengthened my ability to program with a team of people."],
+            "links": [["Visit the website!", "https://cs32termproject.web.app/"]],
+            "images": ["better-brown.png"],
+            "videos": []
         },
 
         {
@@ -171,18 +176,29 @@
                 "This website is built with expandability in mind. That is, new features and cards can be easily added in the future.",
                 "This website considers several usability and UIUX principles such as effectivity, efficiency, comprehensible design, learnability, and consistent design."],
             "links": [["Visit the website!", "https://hongzheng24.github.io/uiux-development/"]],
-            "images": ["development.png"]
+            "images": ["development.png"],
+            "videos": []
+        },
+
+        {   "name": "Seam Carving Algorithm and Visualizer",
+            "subheading": "Java",
+            "information": ["I programmed a seam carving algorithm and visualizer for content-aware image resizing.",
+                "The algorithm removes paths (seams) of pixels by calculating least pixel importance based on deviance in RGB color value from neighbor pixels.",
+                "The visualizer allows users to view the seams and the number of seams removed by the algorithm, as well as the resized image."],
+            "links": [["Take a look at the Github", "https://github.com/hongzheng24/seamcarve"]],
+            "images": [],
+            "videos": ["seamcarve.mp4"]
         },
 
         {
-            "name": "Better Brown App in React",
-            "subheading": "React, Selenium, Typescript, Java, Python, HTML & CSS",
-            "information": ["In a team, I helped create the Better Brown App that has the following functionalities: a crowd-sourced event calendar, a geolocator algorithm that tells the user how busy a campus location is, and user authentication.",
-                "I primarily worked on the geolocator algorithm. It lists campus locations, such as libraries and cafeterias, and displays how busy they are. It receives the user's location using a geolocator API and determines if the user is in a campus location using an algorithm that calculates if the user's longitude-latitude coordinates are within the radius of a campus location. It determines how busy a location is by storing the number of occupants and using an algorithm that accounts for the location's current occupancy, time of day, and the location's maximum occupancy.",
-                "Secondarily, I focused on the user experience of the website and the ethics surrounding user privacy. Aside from my main roles, I also helped my team members work on the crowd-sourced event calendar, user authentication, and testing using Selenium.",
-                "This project helped me strengthen my proficiency with React and Selenium and strengthened my ability to program with a team of people."],
-            "links": [["Visit the website!", "https://cs32termproject.web.app/"]],
-            "images": ["better-brown.png"]
+            "name": "Zeta Delta Xi Website",
+            "subheading": "HTML & CSS",
+            "information": ["I am one of the web editors for Zeta Delta Xi. My primary role is to maintain the Zeta Delta Xi website and frequently update it with information on current officers and members.",
+                "As a web editor, I also manipulate internal SQLite databases and update them with sensitive information.",
+                "Zeta Delta Xi is a gender-inclusive and LGBTQ-friendly fraternity at Brown Universty focusing on creating a welcoming space for queer students."],
+            "links": [["Visit the website!", "http://www.zete.org/home/"]],
+            "images": ["zeta-delta-xi-website-1.png", "zeta-delta-xi-website-2.png"],
+            "videos": []
         },
 
         {
@@ -193,7 +209,8 @@
                 "Of course, this website is fully accessible and responsive to all screen sizes."],
             "links": [["Take a look at the project!", "https://hongzheng24.github.io/uiux-responsive-redesign/"],
                 ["Take a look at the redesigned website!", "https://hongzheng24.github.io/uiux-when2meet-redesign/"]],
-            "images": ["when2meet-1.png", "when2meet-2.png", "when2meet-3.png"]
+            "images": ["when2meet-1.png", "when2meet-2.png", "when2meet-3.png"],
+            "videos": []
         },
 
         {
@@ -201,7 +218,8 @@
             "subheading": "Figma, High Fidelity Wireframing, Prototyping, User Testing, HTML & CSS",
             "information": ["In a team, I aided in designing a user-centered and accessible website for the startup Vendoo."],
             "links": [["Take a look at the project!", "https://hongzheng24.github.io/uiux-iterative-design-and-evaluation/"]],
-            "images": ["interative-design-and-evaluation.png"]
+            "images": ["interative-design-and-evaluation.png"],
+            "videos": []
         }
     ]
     
@@ -209,7 +227,7 @@
     let projectHTML = ""
     for (let project of projects) {
         projectHTML += "<div class=\"projects-item\">"
-            + "<div class=\"projects-title-container\">"
+            + "<div class=\"projects-title-container\" id=\"" + project.name + "\">"
             + "<div class=\"project-title-sub-container\">"
             + "<p>" + project.name + "</p>"
             + "<p class=\"sub-heading\">" + project.subheading +"</p>"
@@ -233,6 +251,15 @@
         }
         projectHTML += "</div>"
             + "<div class=\"projects-img-container\">"
+        
+        // Create HTML elements for project videos
+        for (let i = 0; i < project.videos.length; i++) {
+            projectHTML += "<video id=\"" + project.videos[i] + "\" controls muted style=\"width: 100%;\">"
+                + "<source src=\"" + project.videos[i] + "\">"
+                + "\"This browser does not support the current implementation of video support\""
+                + "</video>"
+        }
+
         // Create HTML elements for project images
         for (let i = 0; i < project.images.length; i++) {
             if (i == project.images.length - 1) {
@@ -254,7 +281,7 @@
 
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.maxHeight){
+            if (content.style.maxHeight) {
                 content.style.maxHeight = null;
                 this.lastElementChild.innerHTML = "+";
             } else {
@@ -276,4 +303,16 @@
             }*/
       });
     }
+
+    // Add video autoplay on expand/collapse functionality for seamcarve video
+    var seamcarveVideo = document.getElementById("seamcarve.mp4");
+    var seamcarveButton = document.getElementById("Seam Carving Algorithm and Visualizer");
+
+    seamcarveButton.addEventListener("click", function() {
+        if (seamcarveVideo.paused == true) {
+            seamcarveVideo.play();
+        } else {
+            seamcarveVideo.pause();
+        }
+    });
 </script>
