@@ -95,7 +95,7 @@
                     <iframe src='https://my.spline.design/tea-4a09a5634ff3cd5a85fde0c3de9a70de/' frameborder='0' width='140rem' height='100%'></iframe>
                 </div>
 
-                <div class="info-container flex-center">
+                <div class="info-container flex-center fade">
                     <div class="text-container">
                         <p>Hey y'all! I'm Reggie (Hong) Zheng (he/any pronouns), and I'm from the Mississippi Delta... yeehaw.</p>
                         <p>My mission is to create welcoming spaces and make learning accessible for fellow low-income and LGBTQ+ students of color.</p>   
@@ -118,15 +118,17 @@
                     <a class="heading">resume</a>
                     <iframe src='https://my.spline.design/hotchocolate-26001985eb08f22ac0d40a0ca05f08c0/' frameborder='0' width='140rem' height='100%'></iframe>
                 </div>
-                <div style="display: flex; width:86%; justify-content: end;">
-                    <a alt="Open the resume PDF in a new tab" href="resume.pdf" target="_blank" style="display: block; width: 1.25rem; height: 1.25rem; margin-bottom: .75rem;">
-                        <img alt="Open resume PDF to new tab icon" src="new-tab-open-icon.png" style="width: 100%;"/>
-                    </a>
-                </div>
-                <div class="flex-center resume-container">
-                    <!--<img class="resume" src="resume.png"/>-->
-                    <iframe id="resume-pdf" src="resume.pdf"></iframe>
-                    <!--<a href="resume.pdf" target="_blank" style="width: 35%;"><img class="box-img" src="resume.png" style="width: 100%;"></img></a>-->
+                <div class="fade">
+                    <div style="display: flex; width:86%; justify-content: end;">
+                        <a alt="Open the resume PDF in a new tab" href="resume.pdf" target="_blank" style="display: block; width: 1.25rem; height: 1.25rem; margin-bottom: .75rem;">
+                            <img alt="Open resume PDF to new tab icon" src="new-tab-open-icon.png" style="width: 100%;"/>
+                        </a>
+                    </div>
+                    <div class="flex-center resume-container">
+                        <!--<img class="resume" src="resume.png"/>-->
+                        <iframe id="resume-pdf" src="resume.pdf"></iframe>
+                        <!--<a href="resume.pdf" target="_blank" style="width: 35%;"><img class="box-img" src="resume.png" style="width: 100%;"></img></a>-->
+                    </div>
                 </div>
             </div>
 
@@ -161,18 +163,6 @@
     projects = [
 
         {
-            "name": "Better Brown App in React",
-            "subheading": "React, Selenium, Typescript, Java, Python, HTML & CSS",
-            "information": ["In a team, I helped create the Better Brown App that has the following functionalities: a crowd-sourced event calendar, a geolocator algorithm that tells the user how busy a campus location is, and user authentication.",
-                "I primarily worked on the geolocator algorithm. It lists campus locations, such as libraries and cafeterias, and displays how busy they are. It receives the user's location using a geolocator API and determines if the user is in a campus location using an algorithm that calculates if the user's longitude-latitude coordinates are within the radius of a campus location. It determines how busy a location is by storing the number of occupants and using an algorithm that accounts for the location's current occupancy, time of day, and the location's maximum occupancy.",
-                "Secondarily, I focused on the user experience of the website and the ethics surrounding user privacy. Aside from my main roles, I also helped my team members work on the crowd-sourced event calendar, user authentication, and testing using Selenium.",
-                "This project helped me strengthen my proficiency with React and Selenium and strengthened my ability to program with a team of people."],
-            "links": [["Visit the website!", "https://cs32termproject.web.app/"]],
-            "images": ["better-brown.png"],
-            "videos": []
-        },
-
-        {
             "name": "Legends of Runeterra Card Gallery",
             "subheading": "React, Javascript, HTML & CSS",
             "information": ["I created a responsive and user-centered card gallery for the popular card game Legends of Runeterra in React with filtering, sorting, and aggregating functionalities.",
@@ -181,7 +171,7 @@
                 "This website considers several usability and UIUX principles such as effectivity, efficiency, comprehensible design, learnability, and consistent design."],
             "links": [["Visit the website!", "https://hongzheng24.github.io/uiux-development/"]],
             "images": ["development.png"],
-            "videos": []
+            "videos": ["development.mov"]
         },
 
         {   "name": "Seam Carving Algorithm and Visualizer",
@@ -206,6 +196,27 @@
         },
 
         {
+            "name": "Better Brown App in React",
+            "subheading": "React, Selenium, Typescript, Java, Python, HTML & CSS",
+            "information": ["In a team, I helped create the Better Brown App that has the following functionalities: a crowd-sourced event calendar, a geolocator algorithm that tells the user how busy a campus location is, and user authentication.",
+                "I primarily worked on the geolocator algorithm. It lists campus locations, such as libraries and cafeterias, and displays how busy they are. It receives the user's location using a geolocator API and determines if the user is in a campus location using an algorithm that calculates if the user's longitude-latitude coordinates are within the radius of a campus location. It determines how busy a location is by storing the number of occupants and using an algorithm that accounts for the location's current occupancy, time of day, and the location's maximum occupancy.",
+                "Secondarily, I focused on the user experience of the website and the ethics surrounding user privacy. Aside from my main roles, I also helped my team members work on the crowd-sourced event calendar, user authentication, and testing using Selenium.",
+                "This project helped me strengthen my proficiency with React and Selenium and strengthened my ability to program with a team of people."],
+            "links": [],
+            "images": ["better-brown.png"],
+            "videos": []
+        },
+
+        {
+            "name": "Iterative Website Design for Vendoo",
+            "subheading": "Figma, High Fidelity Wireframing, Prototyping, User Testing, HTML & CSS",
+            "information": ["In a team, I aided in designing a user-centered and accessible website for the startup Vendoo.", "We first created quick sketches of designs with Vendoo's product and Vendoo's customers in mind. We then compiled our sketches and settled on a design that encompassed design choices we liked.", "Then, we created low-fidelity wireframes and high-fidelity wireframes using Figma and gathered critiques on our design from fellow UI/UX designers.", "Next, we conducted three user tests to access the learnability, usability, and accessbility of our design.","Finally, we designed a website to house our project."],
+            "links": [["Take a look at the project!", "https://hongzheng24.github.io/uiux-iterative-design-and-evaluation/"]],
+            "images": ["iterative-design-1.png", "iterative-design-2.png", "iterative-design-3.png"],
+            "videos": []
+        },
+
+        {
             "name": "Responsive Redesign of When2meet",
             "subheading": "Figma, High and Low Fidelity Wireframing, Prototyping, HTML & CSS",
             "information": ["I redesigned the website When2meet with learnability, usability, memorability, accessibility, and responsiveness in mind.",
@@ -213,25 +224,18 @@
                 "Of course, this website is fully accessible and responsive to all screen sizes."],
             "links": [["Take a look at the project!", "https://hongzheng24.github.io/uiux-responsive-redesign/"],
                 ["Take a look at the redesigned website!", "https://hongzheng24.github.io/uiux-when2meet-redesign/"]],
-            "images": ["when2meet-1.png", "when2meet-2.png", "when2meet-3.png"],
-            "videos": []
-        },
-
-        {
-            "name": "Iterative Website Design for Vendoo",
-            "subheading": "Figma, High Fidelity Wireframing, Prototyping, User Testing, HTML & CSS",
-            "information": ["In a team, I aided in designing a user-centered and accessible website for the startup Vendoo."],
-            "links": [["Take a look at the project!", "https://hongzheng24.github.io/uiux-iterative-design-and-evaluation/"]],
-            "images": ["interative-design-and-evaluation.png"],
+            "images": ["when2meet-1.jpeg", "when2meet-2.jpeg", "when2meet-3.jpeg"],
             "videos": []
         }
+
+
     ]
     
     // Create HTML element for each project
     let projectHTML = ""
     for (let project of projects) {
         projectHTML += "<div class=\"projects-item\">"
-            + "<div class=\"projects-title-container\" id=\"" + project.name + "\">"
+            + "<div class=\"projects-title-container fade\" id=\"" + project.name + "\">"
             + "<div class=\"project-title-sub-container\">"
             + "<p class=\"project-heading\">" + project.name + "</p>"
             + "<p class=\"sub-heading\">" + project.subheading +"</p>"
@@ -319,4 +323,33 @@
             seamcarveVideo.pause();
         }
     });
+
+    // Add video autoplay on expand/collapse functionality for development video
+    var seamcarveVideo = document.getElementById("development.mov");
+    var seamcarveButton = document.getElementById("Legends of Runeterra Card Gallery");
+
+    seamcarveButton.addEventListener("click", function() {
+        if (seamcarveVideo.paused == true) {
+            seamcarveVideo.play();
+        } else {
+            seamcarveVideo.pause();
+        }
+    });
+
+    // Add fade-in on scroll
+    let elementsArray = document.querySelectorAll(".fade");
+    window.addEventListener('scroll', fadeIn ); 
+    function fadeIn() {
+        for (var i = 0; i < elementsArray.length; i++) {
+            var elem = elementsArray[i]
+            var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+            if (distInView < 0) {
+                elem.classList.add("inView");
+            } /*else {
+                elem.classList.remove("inView");
+            }*/
+        }
+    }
+    fadeIn();
+
 </script>
