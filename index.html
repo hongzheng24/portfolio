@@ -325,14 +325,14 @@
     });
 
     // Add video autoplay on expand/collapse functionality for development video
-    var seamcarveVideo = document.getElementById("development.mov");
-    var seamcarveButton = document.getElementById("Legends of Runeterra Card Gallery");
+    var developmentVideo = document.getElementById("development.mov");
+    var developmentButton = document.getElementById("Legends of Runeterra Card Gallery");
 
-    seamcarveButton.addEventListener("click", function() {
-        if (seamcarveVideo.paused == true) {
-            seamcarveVideo.play();
+    developmentButton.addEventListener("click", function() {
+        if (developmentVideo.paused == true) {
+            developmentVideo.play();
         } else {
-            seamcarveVideo.pause();
+            developmentVideo.pause();
         }
     });
 
