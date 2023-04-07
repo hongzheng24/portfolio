@@ -61,10 +61,11 @@
                         <p class="intro-heading">howdy! 🤠☕️</p>
                         <p class="intro-heading">i'm reggie zheng</p>
                         
+                        <p>machine learning, software engineering, web development, ui/ux design</p>
                         <p>cs + math student and teaching assistant @ brown university.</p>
                         <p>cs + math instructor @ juni learning.</p>
                         <p>web editor @ zeta delta xi.</p>
-                        <p>skills: react, python, java, html & css, javascript, typescript, figma, praat.</p>
+                        <!--<p>skills: react, python, java, html & css, javascript, typescript, figma, praat.</p>-->
                         <div class="contact-me-body">
                             <a alt="Visit Reggie (Hong) Zheng's LinkedIn profile" href="https://www.linkedin.com/in/hong-zheng-a39a69234/" target="_blank"><img alt="LinkedIn icon" src="linkedin-icon.png"/></a>
                             <a alt="Visit Reggie (Hong) Zheng's Github profile" href="https://github.com/hongzheng24" target="_blank"><img alt="Github icon" src="github-icon.png"/></a>
@@ -164,7 +165,7 @@
 
         {
             "name": "Legends of Runeterra Card Gallery",
-            "subheading": "React, Javascript, HTML & CSS",
+            "subheading": "UI/UX, Web Development | React, Javascript, HTML & CSS",
             "information": ["I created a responsive and user-centered card gallery for the popular card game Legends of Runeterra in React with filtering, sorting, and aggregating functionalities.",
                 "Legends of Runeterra is a popular online card game. This website aims to help players find cards suitible for their playstyles and help new players learn about the cards and their information. The user can filter the cards by their region and mana cost, sort the cards by mana cost, and add cards to a deck.",
                 "This website is built with expandability in mind. That is, new features and cards can be easily added in the future.",
@@ -174,8 +175,9 @@
             "videos": ["development.mov"]
         },
 
-        {   "name": "Seam Carving Algorithm and Visualizer",
-            "subheading": "Java",
+        {   
+            "name": "Seam Carving Algorithm and Visualizer",
+            "subheading": "Computer Vision | Java",
             "information": ["I programmed a seam carving algorithm and visualizer for content-aware image resizing.",
                 "The algorithm removes paths (seams) of pixels by calculating least pixel importance based on deviance in RGB color value from neighbor pixels.",
                 "The visualizer allows users to view the seams and the number of seams removed by the algorithm, as well as the resized image."],
@@ -186,7 +188,7 @@
 
         {
             "name": "Zeta Delta Xi Website",
-            "subheading": "HTML & CSS",
+            "subheading": "Web Development | HTML & CSS",
             "information": ["I am one of the web editors for Zeta Delta Xi. My primary role is to maintain the Zeta Delta Xi website and frequently update it with information on current officers and members.",
                 "As a web editor, I also manipulate internal SQLite databases and update them with sensitive information.",
                 "Zeta Delta Xi is a gender-inclusive and LGBTQ-friendly fraternity at Brown Universty focusing on creating a welcoming space for queer students."],
@@ -197,7 +199,7 @@
 
         {
             "name": "Better Brown App in React",
-            "subheading": "React, Selenium, Typescript, Java, Python, HTML & CSS",
+            "subheading": "Frontend & Backend, UI/UX, Website Development | React, Selenium, Typescript, Java, Python, HTML & CSS",
             "information": ["In a team, I helped create the Better Brown App that has the following functionalities: a crowd-sourced event calendar, a geolocator algorithm that tells the user how busy a campus location is, and user authentication.",
                 "I primarily worked on the geolocator algorithm. It lists campus locations, such as libraries and cafeterias, and displays how busy they are. It receives the user's location using a geolocator API and determines if the user is in a campus location using an algorithm that calculates if the user's longitude-latitude coordinates are within the radius of a campus location. It determines how busy a location is by storing the number of occupants and using an algorithm that accounts for the location's current occupancy, time of day, and the location's maximum occupancy.",
                 "Secondarily, I focused on the user experience of the website and the ethics surrounding user privacy. Aside from my main roles, I also helped my team members work on the crowd-sourced event calendar, user authentication, and testing using Selenium.",
@@ -209,7 +211,7 @@
 
         {
             "name": "Iterative Website Design for Vendoo",
-            "subheading": "Figma, High Fidelity Wireframing, Prototyping, User Testing, HTML & CSS",
+            "subheading": "UI/UX, Wireframing, Prototyping, User Testing | Figma, HTML & CSS",
             "information": ["In a team, I aided in designing a user-centered and accessible website for the startup Vendoo.", "We first created quick sketches of designs with Vendoo's product and Vendoo's customers in mind. We then compiled our sketches and settled on a design that encompassed design choices we liked.", "Then, we created low-fidelity wireframes and high-fidelity wireframes using Figma and gathered critiques on our design from fellow UI/UX designers.", "Next, we conducted three user tests to access the learnability, usability, and accessbility of our design.","Finally, we designed a website to house our project."],
             "links": [["Take a look at the project!", "https://hongzheng24.github.io/uiux-iterative-design-and-evaluation/"]],
             "images": ["iterative-design-1.png", "iterative-design-2.png", "iterative-design-3.png"],
@@ -218,7 +220,7 @@
 
         {
             "name": "Responsive Redesign of When2meet",
-            "subheading": "Figma, High and Low Fidelity Wireframing, Prototyping, HTML & CSS",
+            "subheading": "UI/UX, Wireframing, Prototyping | Figma, HTML & CSS",
             "information": ["I redesigned the website When2meet with learnability, usability, memorability, accessibility, and responsiveness in mind.",
                 "I first identified the user problems and points of innaccessibility on the original website. I then created low-fidelity and high-fidelity wireframes of my redesign. Lastly, I created a prototype of my redesigned website.",
                 "Of course, this website is fully accessible and responsive to all screen sizes."],
@@ -312,6 +314,34 @@
       });
     }
 
+    // List of videoID and buttonID of all videos
+    var videos = [
+        {
+            "videoID": "seamcarve.mp4",
+            "buttonID": "Seam Carving Algorithm and Visualizer"
+        },
+
+        {
+            "videoID": "development.mov",
+            "buttonID": "Legends of Runeterra Card Gallery"
+        }
+    ]
+
+    // Add video autoplay on expand/collapse functionality for all videos
+    for (let video of videos) {
+        let videoElement = document.getElementById(video.videoID)
+        let buttonElement = document.getElementById(video.buttonID)
+
+        buttonElement.addEventListener("click", function() {
+            if (videoElement.paused == true) {
+                videoElement.play();
+            } else {
+                videoElement.pause();
+            }
+        })
+    }
+
+    /*
     // Add video autoplay on expand/collapse functionality for seamcarve video
     var seamcarveVideo = document.getElementById("seamcarve.mp4");
     var seamcarveButton = document.getElementById("Seam Carving Algorithm and Visualizer");
@@ -335,6 +365,7 @@
             developmentVideo.pause();
         }
     });
+    */
 
     // Add fade-in on scroll
     let elementsArray = document.querySelectorAll(".fade");
